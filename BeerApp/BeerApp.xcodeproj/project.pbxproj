@@ -87,16 +87,14 @@
 		0705A96E217B7AEE0019A256 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9C0282F217B9A8E00061F55 /* Views */,
+				A9C0282E217B9A6900061F55 /* Storyboards */,
+				A9C0282D217B9A5C00061F55 /* Models */,
 				A9C02828217B996500061F55 /* Controllers */,
 				0705A96F217B7AEE0019A256 /* AppDelegate.swift */,
-				0705A971217B7AEE0019A256 /* ViewController.swift */,
-				0705A973217B7AEE0019A256 /* Main.storyboard */,
 				0705A976217B7AEF0019A256 /* Assets.xcassets */,
 				0705A978217B7AEF0019A256 /* LaunchScreen.storyboard */,
 				0705A97B217B7AEF0019A256 /* Info.plist */,
-				142F06D2217B7E3F0081A398 /* Home.storyboard */,
-				A9C02826217B98ED00061F55 /* Profile.storyboard */,
-				A9C02824217B98C600061F55 /* BeerList.storyboard */,
 			);
 			path = BeerApp;
 			sourceTree = "<group>";
@@ -115,8 +113,34 @@
 			children = (
 				A9C02829217B997C00061F55 /* BeerListViewController.swift */,
 				A9C0282B217B998E00061F55 /* BeerDetailViewController.swift */,
+				0705A971217B7AEE0019A256 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9C0282D217B9A5C00061F55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9C0282E217B9A6900061F55 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				142F06D2217B7E3F0081A398 /* Home.storyboard */,
+				A9C02826217B98ED00061F55 /* Profile.storyboard */,
+				A9C02824217B98C600061F55 /* BeerList.storyboard */,
+				0705A973217B7AEE0019A256 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A9C0282F217B9A8E00061F55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
