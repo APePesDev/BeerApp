@@ -8,8 +8,12 @@
 
 import UIKit
 
-class BeerListViewController: UIViewController {
-
+class BeerListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+   
+    //var beers = [Beer]()
+    var beer : Beer?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,23 @@ class BeerListViewController: UIViewController {
     }
     
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return beers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell =
+            tableView.dequeueReusableCell(withIdentifier:
+                "beer") as? BeerTableViewCell else {
+                    fatalError("Could not dequeue a cell")
+        }
+        
+        let beer = beers[indexPath.row]
+        cell.textLabel?.text = beer.name
+        //cell.titleLabel?.text = beer.name
+        // = beer.description
+        return cell
+    }
     /*
     // MARK: - Navigation
 
