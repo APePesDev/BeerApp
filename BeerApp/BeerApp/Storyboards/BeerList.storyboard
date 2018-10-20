@@ -33,7 +33,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="aNI-Kd-9ku"/>
                     <connections>
-                        <segue destination="Bsg-AA-Siu" kind="showDetail" id="lKV-22-lGc"/>
+                        <segue destination="Bsg-AA-Siu" kind="showDetail" identifier="showDetail" id="lKV-22-lGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jk-v9-Adm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYP-n5-qEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1214" y="2946"/>
+            <point key="canvasLocation" x="-878" y="2946"/>
         </scene>
     </scenes>
 </document>
