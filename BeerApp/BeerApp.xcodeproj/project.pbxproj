@@ -18,6 +18,7 @@
 		A9C02827217B98ED00061F55 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C02826217B98ED00061F55 /* Profile.storyboard */; };
 		A9C0282A217B997C00061F55 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C02829217B997C00061F55 /* BeerListViewController.swift */; };
 		A9C0282C217B998E00061F55 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0282B217B998E00061F55 /* BeerDetailViewController.swift */; };
+		A9C02831217B9B3100061F55 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C02830217B9B3100061F55 /* Order.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A9C02826217B98ED00061F55 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		A9C02829217B997C00061F55 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		A9C0282B217B998E00061F55 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		A9C02830217B9B3100061F55 /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				142F06D2217B7E3F0081A398 /* Home.storyboard */,
+				A9C02830217B9B3100061F55 /* Order.storyboard */,
 				A9C02826217B98ED00061F55 /* Profile.storyboard */,
 				A9C02824217B98C600061F55 /* BeerList.storyboard */,
 				0705A973217B7AEE0019A256 /* Main.storyboard */,
@@ -228,6 +231,7 @@
 				0705A97A217B7AEF0019A256 /* LaunchScreen.storyboard in Resources */,
 				A9C02825217B98C600061F55 /* BeerList.storyboard in Resources */,
 				0705A977217B7AEF0019A256 /* Assets.xcassets in Resources */,
+				A9C02831217B9B3100061F55 /* Order.storyboard in Resources */,
 				0705A975217B7AEE0019A256 /* Main.storyboard in Resources */,
 				142F06D3217B7E3F0081A398 /* Home.storyboard in Resources */,
 			);
