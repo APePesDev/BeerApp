@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="1bM-8D-YMI" kind="relationship" relationship="viewControllers" id="g8D-26-H2g"/>
-                        <segue destination="oi3-g8-fwm" kind="relationship" relationship="viewControllers" id="3Z9-d2-YmL"/>
+                        <segue destination="smd-IN-0G1" kind="relationship" relationship="viewControllers" id="3Z9-d2-YmL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jG2-Ol-VF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,17 +35,23 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHd-hj-C0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="2601"/>
+            <point key="canvasLocation" x="-1742" y="2946"/>
         </scene>
         <!--Profile-->
-        <scene sceneID="uVG-sC-I7o">
+        <scene sceneID="bgg-kq-msv">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="oi3-g8-fwm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1gy-qu-EOp"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ca2-J8-h1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="smd-IN-0G1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N8u-Uj-rU1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7tD-A0-hQW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="FKn-1r-0ho"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSz-Fs-QXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1003" y="2601"/>
+            <point key="canvasLocation" x="-502" y="2859"/>
         </scene>
     </scenes>
 </document>
