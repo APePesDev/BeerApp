@@ -19,7 +19,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="1bM-8D-YMI" kind="relationship" relationship="viewControllers" id="g8D-26-H2g"/>
-                        <segue destination="oi3-g8-fwm" kind="relationship" relationship="viewControllers" id="3Z9-d2-YmL"/>
+                        <segue destination="zSE-rY-gJH" kind="relationship" relationship="viewControllers" id="sQq-VU-EXL"/>
+                        <segue destination="oi3-g8-fwm" kind="relationship" relationship="viewControllers" id="Jgv-Fq-zc7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jG2-Ol-VF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,7 +31,7 @@
         <scene sceneID="bEh-Em-97u">
             <objects>
                 <viewControllerPlaceholder storyboardName="BeerList" id="1bM-8D-YMI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iSx-do-cV1"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="iSx-do-cV1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHd-hj-C0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,11 +41,21 @@
         <scene sceneID="uVG-sC-I7o">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="oi3-g8-fwm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1gy-qu-EOp"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="1gy-qu-EOp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ca2-J8-h1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1003" y="2601"/>
+            <point key="canvasLocation" x="-936" y="2587"/>
+        </scene>
+        <!--Order-->
+        <scene sceneID="RAe-z8-jdG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" id="zSE-rY-gJH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Order" id="4E8-FY-bbH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouB-72-JBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1306" y="2601"/>
         </scene>
     </scenes>
 </document>
