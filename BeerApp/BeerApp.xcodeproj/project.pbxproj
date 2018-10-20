@@ -13,6 +13,7 @@
 		0705A977217B7AEF0019A256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0705A976217B7AEF0019A256 /* Assets.xcassets */; };
 		0705A97A217B7AEF0019A256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0705A978217B7AEF0019A256 /* LaunchScreen.storyboard */; };
 		0705A985217B7AEF0019A256 /* BeerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705A984217B7AEF0019A256 /* BeerAppTests.swift */; };
+		0705A992217BA14E0019A256 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0705A991217BA14E0019A256 /* Login.storyboard */; };
 		142F06D3217B7E3F0081A398 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142F06D2217B7E3F0081A398 /* Home.storyboard */; };
 		A9C02825217B98C600061F55 /* BeerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C02824217B98C600061F55 /* BeerList.storyboard */; };
 		A9C02827217B98ED00061F55 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C02826217B98ED00061F55 /* Profile.storyboard */; };
@@ -42,6 +43,7 @@
 		0705A980217B7AEF0019A256 /* BeerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0705A984217B7AEF0019A256 /* BeerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppTests.swift; sourceTree = "<group>"; };
 		0705A986217B7AEF0019A256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0705A991217BA14E0019A256 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		142F06D2217B7E3F0081A398 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A9C02824217B98C600061F55 /* BeerList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeerList.storyboard; sourceTree = "<group>"; };
 		A9C02826217B98ED00061F55 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				A9C02826217B98ED00061F55 /* Profile.storyboard */,
 				A9C02824217B98C600061F55 /* BeerList.storyboard */,
 				0705A973217B7AEE0019A256 /* Main.storyboard */,
+				0705A991217BA14E0019A256 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0705A992217BA14E0019A256 /* Login.storyboard in Resources */,
 				A9C02827217B98ED00061F55 /* Profile.storyboard in Resources */,
 				0705A97A217B7AEF0019A256 /* LaunchScreen.storyboard in Resources */,
 				A9C02825217B98C600061F55 /* BeerList.storyboard in Resources */,
@@ -417,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X8CT3SS89;
+				DEVELOPMENT_TEAM = LKT468ZY3G;
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X8CT3SS89;
+				DEVELOPMENT_TEAM = LKT468ZY3G;
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
