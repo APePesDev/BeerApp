@@ -42,6 +42,19 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail"{
+            let beerDetailViewController = segue.destination as! BeerDetailViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            let beer = self.beerCarousel.beers[indexPath.row]
+            beerDetailViewController.beerdetail = beer
+        }
+    }
     /*
     // MARK: - Navigation
 
