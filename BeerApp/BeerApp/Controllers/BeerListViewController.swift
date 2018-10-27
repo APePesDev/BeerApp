@@ -9,14 +9,12 @@
 import UIKit
 
 class BeerListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   
-    //var beers = [Beer]()
-    var beer : Beer?
-    
-    
+    @IBOutlet weak var tableView: UITableView!
+    let beerCarousel = BeerCarousel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(UINib(nibName: "BeerTableViewCell", bundle: nil), forCellReuseIdentifier: "beerCell")
         // Do any additional setup after loading the view.
     }
 
@@ -27,21 +25,22 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return beers.count
+        return beerCarousel.beers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell =
-            tableView.dequeueReusableCell(withIdentifier:
-                "beer") as? BeerTableViewCell else {
-                    fatalError("Could not dequeue a cell")
+        guard let cell = self.tableView.dequeueReusableCell(withIdentifier: "beerCell", for: indexPath) as? BeerTableViewCell else {
+            fatalError("Could not dequeue a cell")
         }
-        
-        let beer = beers[indexPath.row]
-        cell.textLabel?.text = beer.name
-        //cell.titleLabel?.text = beer.name
-        // = beer.description
+       let beer = self.beerCarousel.beers[indexPath.row]
+        cell.beerNameLabel.text = beer.name
+        cell.originLabel.text = beer.description
+        cell.beerImage.image = UIImage(named: beer.imageName)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
     /*
     // MARK: - Navigation
