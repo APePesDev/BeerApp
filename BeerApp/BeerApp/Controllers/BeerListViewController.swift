@@ -35,7 +35,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
        let beer = self.beerCarousel.beers[indexPath.row]
         cell.beerNameLabel.text = beer.name
         cell.originLabel.text = beer.description
-        cell.beerImage.image = UIImage(named: beer.imageName)
+        cell.beerImage.image = UIImage(named: "beerF")
         return cell
     }
     

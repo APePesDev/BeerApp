@@ -36,7 +36,7 @@ class BeerDetailViewController: UIViewController, UITableViewDataSource, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "beerCell") as! BeerTableViewCell
         cell.beerNameLabel.text = beerdetail!.name
         cell.originLabel.text = beerdetail!.description
-        cell.beerImage.image = UIImage(named: beerdetail!.imageName)
+        cell.beerImage.image = UIImage(named: "beerF")
         return cell
     }
     
