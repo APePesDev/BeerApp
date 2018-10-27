@@ -11,8 +11,7 @@ import UIKit
 class BeerListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     let beerCarousel = BeerCarousel()
-    var beer : Beer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "BeerTableViewCell", bundle: nil), forCellReuseIdentifier: "beerCell")
@@ -35,6 +34,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         }
        let beer = self.beerCarousel.beers[indexPath.row]
         cell.beerNameLabel.text = beer.name
+        cell.originLabel.text = beer.description
         cell.beerImage.image = UIImage(named: beer.imageName)
         return cell
     }
